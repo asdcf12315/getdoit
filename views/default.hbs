@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>TMY博客</title>
+</head>
+<body>
+<div id="display" class="container">
+        {{#each atext}}
+            {{#if href}}
+            <div class="row show">
+                <div class="span4">
+                    {{#if img}}
+                        <img src={{img}} class="img-responsive">
+                    {{else}}
+                        <img src="/images/notfound.jpg" class="img-responsive">
+                    {{/if}}
+                    <a href={{href}}>{{name}}</a>
+                </div>
+            </div>
+            {{/if}}
+        {{/each}}
+    </div>
+<form>
+    <input type="text">
+    <input type="submit">
+</form>
+</body>
+<script id="table-template" type="text/x-handlebars-template">
+</script>
+</html>
